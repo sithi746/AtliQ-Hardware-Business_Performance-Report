@@ -1,4 +1,4 @@
-# AtliQ Hardware Sales Analysis 
+# AtliQ Hardware Sales & finance Analysis 
 
 ---
 
