@@ -1,6 +1,5 @@
 # AtliQ Business Performance Analysis
 
--
 
 ## 
 **AtliQ Hardware Sales & Finance Report** – Monitor sales & Finance performance across markets, customers, products, Fiscal year, Quarter months and divisions to uncover growth opportunities and performance gaps.  
