@@ -25,7 +25,7 @@ This report transforms raw sales, financial, and target data into a structured, 
 ## Tech Stack
 - **Data Modeling & Transformation:** Excel Power Query, Power Pivot  
 - **Analytics & Reporting:** DAX, Power BI / Excel  
-- **Data Storage:** Fact & Dimension tables (Star schema)  
+- **Data Storage:** Fact & Dimension tables (Snowflake schema)  
 
 
 ---
