@@ -90,7 +90,7 @@ The dashboard uses a **Snowflake-schema** for multi-dimensional analysis:
 
 ### Goal of the Report
 The primary goal of the AtliQ Hardwares finance and sales report is to evaluate enterprise performance across global markets, customer accounts, and product lines to identify growth opportunities and optimize profitability.
-# Key Objectives:
+### Key Objectives:
 - Track Revenue Growth: Monitor net sales expansion and YoY trends (FY2019–2021).
 - Analyze Profitability: Evaluate P&L statements, COGS, and gross margins across divisions.Assess 
 - Market Targets: Measure actual sales against target benchmarks to spot regional variances.Identify 
