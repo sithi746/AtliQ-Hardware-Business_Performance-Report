@@ -1,25 +1,31 @@
-# AtliQ Hardware Sales Analysis 
+# AtliQ Business Performance Analysis
 
 ---
 
 ## 
-**AtliQ Hardware Sales Report** – Monitor sales performance across markets, customers, products, and divisions to uncover growth opportunities and performance gaps.  
+**AtliQ Hardware Sales & Finance Report** – Monitor sales & Finance performance across markets, customers, products, Fiscal year, Quarter months and divisions to uncover growth opportunities and performance gaps.  
 
 ---
 
 ##  Purpose
-This dashboard transforms raw sales and target data into a **structured, actionable analytics tool**, enabling stakeholders to:  
-- Track overall revenue performance  
-- Compare actuals vs targets  
-- Identify top-performing products and customers  
-- Make data-driven strategic decisions  
+This report transforms raw sales, financial, and target data into a structured, actionable analytical resource, enabling stakeholders to:
+
+-Track overall revenue performance and sales growth
+
+-Analyze profit and loss (P&L) statements, cost of goods sold (COGS), and gross margins
+
+-Compare actual sales against regional and market targets
+
+-Identify top-performing products, customer accounts, and divisions
+
+-Uncover commercial growth opportunities and address performance gaps to make data-driven strategic decisions
 
 ---
 
 ## Tech Stack
 - **Data Modeling & Transformation:** Excel Power Query, Power Pivot  
 - **Analytics & Reporting:** DAX, Power BI / Excel  
-- **Data Storage:** Fact & Dimension tables (Snowflake schema)  
+- **Data Storage:** Fact & Dimension tables (Star schema)  
 
 
 ---
@@ -29,7 +35,7 @@ This dashboard transforms raw sales and target data into a **structured, actiona
 |-------|------------|
 | `fact_sales_monthly` | Transactional sales data |
 | `ns_targets_2021` | Market-level sales targets |
-| `dim_customer` | Customer info (platform, channel) |
+| `dim_customer` | Customer info (Market,platform, channel) |
 | `dim_product` | Product hierarchy (division, segment, category) |
 | `dim_market` | Market, sub-zone, region hierarchy |
 | `dim_date` | Date, month, fiscal year |
@@ -65,36 +71,54 @@ The dashboard uses a **Snowflake-schema** for multi-dimensional analysis:
 7. 21_vs_20
 =DIVIDE([net_sales_21]-[net_sales_20], [net_sales_20], 0)
 
-8. %
+8.  2021-Target %
 =DIVIDE([2021-Target],[target_21], 0)
+
+9. total_cogs
+=SUM('fact-sales-monthly'[COGS])
+
+10.gross_margin
+=[net_sales]-[total_cogs]  
+
+11.gross_margin%
+=DIVIDE([gross_margin], [net_sales], 0)
 
 ##  Features 
 
 ### Business Problem
 - Disconnected data across multiple sources  
-- Difficulty tracking sales, targets, and growth gaps  
+- Difficulty tracking sales, Finance, targets, and growth gaps  
 
 ### Goal of the Report
-- Consolidate data for actionable insights  
-- Track performance vs targets across markets, customers, and products  
+The primary goal of the AtliQ Hardwares finance and sales report is to evaluate enterprise performance across global markets, customer accounts, and product lines to identify growth opportunities and optimize profitability.
+# Key Objectives:
+- Track Revenue Growth: Monitor net sales expansion and YoY trends (FY2019–2021).
+- Analyze Profitability: Evaluate P&L statements, COGS, and gross margins across divisions.Assess 
+- Market Targets: Measure actual sales against target benchmarks to spot regional variances.Identify 
+- Key Drivers: Highlight top customers, high-volume products, and core business divisions (P&A, PC, N&S).
+- Guide Decisions: Resolve performance gaps and optimize resource allocation using financial insights.   
 
 ### Report Walkthrough
 - **Revenue KPI:** Total net sales & YoY growth  
 - **Market & Customer Analysis:** Top-performing regions & clients  
 - **Product & Division Insights:** Top/bottom products & division report
-- **Target vs Actual:** performance gaps  
+- **Target vs Actual:** performance gaps
+- **Financial & P&L Analysis:** Gross margins, COGS breakdown, and overall profitability trends
 
  
 
 ### Business Impact & Insights
-- **Revenue:** $598.9M, 21 vs 20 growth 304.5%
-- **Top Markets:** India $161.3M, USA $87.8M  
-- **Top Customer yoy growth:** Nova 2664.9%
-- **High-Growth Divisions:** PC +313.7%, P&A +221.5%  
-- **Top Products:** AQ mx nb, AQ Smash 2  
-- Recommendations: improve forecasting, scale high-performing products, rationalize underperformers, invest strategically in top divisions
+- Revenue Growth: Generated $598.9M in net sales in FY2021, representing 204.48% YoY growth.
+- Profitability: Achieved $218.2M in gross margin with a 36.43% gross margin percentage.
+- Cost Analysis: Total Cost of Goods Sold (COGS) reached $380.7M, highlighting the importance of cost control alongside revenue growth.
+- Margin Performance: Gross margin percentage declined from 37.28% in FY2020 to 36.43% in FY2021, indicating slight margin compression despite strong sales growth.
+- Top Markets: India ($161.3M) and USA ($87.8M) led revenue contribution.
+- Division Growth: PC (+313.7%) and P&A (+221.5%) recorded the strongest YoY sales growth.
+- Target vs. Actual: Sales performance fell short of targets by $54.9M (9.2%) in FY2021.
+- Product Performance: AQ Electron 4 3600 Desktop Processor ($19.4M) and AQ Smash 2 ($11.2M) were among the leading products by revenue in the top-growth product analysis.
 
+**Note:** All business impact metrics and insights are based on the default report view (all filters selected). The interactive dashboard enables dynamic analysis of revenue, profitability, gross margins, COGS, market performance and product trends across different dimensions using slicers and filters.
 
-## Conclusion
-In 2021, AtliQ Hardware achieved remarkable growth, fueled by expanding customer reach, successful new products, and strong digital sales channels. While the company demonstrates excellent market scalability, closing performance gaps and optimizing product and regional results will be essential to maintain sustainable long-term growth.
+## Business Recommendations
+In FY2021, AtliQ Hardwares recorded significant sales growth, supported by strong customer reach, product performance, and digital sales channels. To sustain this momentum and build long-term profitability, the company must complement top-line expansion with rigorous Profit & Loss (P&L) management—focusing on Cost of Goods Sold (COGS) control, gross margin optimization, regional target achievement, and strategic product positioning. 
 
