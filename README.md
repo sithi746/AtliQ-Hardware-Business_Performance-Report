@@ -76,10 +76,10 @@ The dashboard uses a **Snowflake-schema** for multi-dimensional analysis:
 9. total_cogs
 =SUM('fact-sales-monthly'[COGS])
 
-10.gross_margin
+10. gross_margin
 =[net_sales]-[total_cogs]  
 
-11.gross_margin%
+11. gross_margin%
 =DIVIDE([gross_margin], [net_sales], 0)
 
 ##  Features 
