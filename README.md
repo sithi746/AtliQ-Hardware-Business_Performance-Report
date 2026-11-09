@@ -24,7 +24,7 @@ This report transforms raw sales, financial, and target data into a structured, 
 ## Tech Stack
 - **Data Modeling & Transformation:** Excel Power Query, Power Pivot  
 - **Analytics & Reporting:** DAX, Power BI / Excel  
-- **Data Storage:** Fact & Dimension tables (Snowflake schema)  
+- **Data Storage:** Fact & Dimension tables (Star schema)  
 
 
 ---
@@ -42,7 +42,7 @@ This report transforms raw sales, financial, and target data into a structured, 
 ---
 
 ##  Data Model
-The dashboard uses a **Snowflake-schema** for multi-dimensional analysis:  
+The dashboard uses a **Star-schema** for multi-dimensional analysis:  
 
 ![Data Model](https://github.com/sithi746/AtliQ-Hardware-Sales-Performance-Report/blob/main/DATA%20MODEL.png)  
 *Fact tables link to normalized dimensions for efficient querying and comparisons.*  
