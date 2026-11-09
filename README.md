@@ -119,5 +119,11 @@ The primary goal of the AtliQ Hardwares finance and sales report is to evaluate 
 **Note:** All business impact metrics and insights are based on the default report view (all filters selected). The interactive dashboard enables dynamic analysis of revenue, profitability, gross margins, COGS, market performance and product trends across different dimensions using slicers and filters.
 
 ## Business Recommendations
-In FY2021, AtliQ Hardwares recorded significant sales growth, supported by strong customer reach, product performance, and digital sales channels. To sustain this momentum and build long-term profitability, the company must complement top-line expansion with rigorous Profit & Loss (P&L) management—focusing on Cost of Goods Sold (COGS) control, gross margin optimization, regional target achievement, and strategic product positioning. 
+In FY2021, AtliQ Hardwares recorded significant sales growth, supported by strong customer reach, product performance, and digital sales channels. One interesting finding was that AtliQ generated around $598.9 million in sales in FY2021, but its gross margin percentage declined from 41.43% in FY2019 to 36.43% in FY2021. It also missed its sales target by approximately $54.9 million.
+This revealed that strong sales growth was not necessarily translating into stronger profitability.
+The project helped identify where management could investigate further—whether in underperforming markets, customer performance, or pricing and discount strategies.
+
+*My key takeaway was that data is not just about understanding what happened; it's about helping a business understand why it happened and where it should focus next.*
+ If I were presenting this to the management team, my core recommendation would be that AtliQ must shift from volume expansion to margin protection,
+ They can achieve this by tightening discount controls, promoting higher-margin products.
 
