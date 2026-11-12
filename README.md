@@ -1,4 +1,4 @@
-# AtliQ Business Performance Analysis
+# AtliQ Hardware Business Performance Analysis
 
 
 ## 
